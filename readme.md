@@ -13,5 +13,6 @@ This project adds [LiveScript] syntax highlighting to the gedit text editor. (an
 
 Patches and improvements welcome!
 
-![screenshot](http://wavded.github.com/gedit-coffeescript/screenshot2.png)
+![screenshot](https://raw.github.com/train255/gedit-livescript/master/screenshot/screenshot1.png)
+![screenshot](https://raw.github.com/train255/gedit-livescript/master/screenshot/screenshot2.png)
 
