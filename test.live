@@ -54,9 +54,9 @@ class Animal
 
 bud = new Animal
 
-### Block
+/* Block
 FIXME
-Comments ###
+Comments */
 
 ### Single Line Comment ###
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
- Author: Marc Harter <wavded@gmail.com>
+ Author: Marc Harter <wavded@gmail.com>, Thanh D. Dang <thanhdd.it@gmail.com>
  Copyright (C) 2004 Marc Harter <wavded@gmail.com>
+ Copyright (C) 2013 Thanh D. Dang <thanhdd.it@gmail.com>
 
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public
@@ -20,13 +21,13 @@
  Boston, MA 02111-1307, USA.
 
 -->
-<language id="coffee" _name="CoffeeScript" version="2.0" _section="Scripts">
+<language id="live" _name="LiveScript" version="2.0" _section="Scripts">
     <metadata>
-        <property name="mimetypes">application/coffeescript;text/coffeescript;application/cakefile;text/cakefile;application/icedcoffeescript;text/icedcoffeescript</property>
-        <property name="globs">*.coffee;Cakefile;*.Cakefile;*.coffee.erb;*.iced;*.iced.erb;*.litcoffee</property>
+        <property name="mimetypes">application/livescript;text/livescript</property>
+        <property name="globs">*.live;*.ls;*.node</property>
         <property name="line-comment-start">#</property>
-        <property name="block-comment-start">###</property>
-        <property name="block-comment-end">###</property>
+        <property name="block-comment-start">/*</property>
+        <property name="block-comment-end">*/</property>
     </metadata>
 
     <styles>
@@ -51,7 +52,7 @@
     </styles>
 
     <definitions>
-        <context id="coffee">
+        <context id="live">
             <include>
 
                 <context id="await" style-ref="await">
@@ -61,8 +62,8 @@
 
                 <!-- Comments -->
                 <context id="block-comment" style-ref="comment">
-                    <start>^[ \t]*###([^#]|$)</start>
-                    <end>.*###([^#]|$)</end>
+                    <start>/\*</start>
+                    <end>\*/</end>
                     <include>
                         <context ref="def:in-comment"/>
                     </include>
